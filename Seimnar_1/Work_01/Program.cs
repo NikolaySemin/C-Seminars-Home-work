@@ -5,11 +5,9 @@ Console.Write("Введите число: ");
 int b = int.Parse(Console.ReadLine()!);
 if(b == a*a)
 {
-    Console.Write("число является квадратом: ");
-    Console.WriteLine(a);
+    Console.WriteLine("число является квадратом первого числа");
 }
 else
 {
-    Console.Write("число не является квадратом: ");
-    Console.WriteLine(a);
+    Console.WriteLine("число не является квадратом первого числа");
 }
