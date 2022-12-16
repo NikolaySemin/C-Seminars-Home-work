@@ -8,7 +8,7 @@ Double b = Double.Parse(Console.ReadLine()!);
 
    if ( a % b == 0 )
    {
-        Console.Write("Первое число кратно второму, остаток: ");
+        Console.Write("Первое число кратно второму");
    }
    else
    {
