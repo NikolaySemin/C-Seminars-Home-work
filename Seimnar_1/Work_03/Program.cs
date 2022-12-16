@@ -1,7 +1,11 @@
 ﻿// Найти максимальное из трех чисел
-int a = 5;
-int b = 3;
-int c = 6;
+
+int a =  new Random().Next(1, 99);
+Console.WriteLine(a);
+int b =  new Random().Next(1, 99);
+Console.WriteLine(b);
+int c =  new Random().Next(1, 99);
+Console.WriteLine(c);
 int max = a;
 if (a > max) max =a;
 if (b > max) max =b;
