@@ -18,7 +18,6 @@ while(true)
     {
         Console.Write("третье число у вас: ");
         Console.WriteLine(a.ToString()[2]);
-        Console.ReadKey(true);
         break;
     }
     else
