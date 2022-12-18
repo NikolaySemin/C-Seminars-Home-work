@@ -56,9 +56,9 @@ int num = int.Parse(Console.ReadLine()!);
 
 if (num <= 5 )
 {
-    Console.WriteLine("будни");
+    Console.WriteLine("Будний день");
 }
 else
 {
-    Console.WriteLine("выходной");
+    Console.WriteLine("Выходной");
 }
