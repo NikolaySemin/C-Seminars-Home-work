@@ -9,6 +9,12 @@ int b = a/10%10;
 Console.Write("второе число у вас: ");
 Console.WriteLine(b);
 
+// Console.Write("Введите трехзначное число: ");
+// int a = int.Parse(Console.ReadLine()!);
+// Console.Write("второе число у вас: ");
+// Console.WriteLine(a.ToString()[1]);
+
+
 
 // Console.WriteLine("Введите трехзначное число.\n Для выхода из программы введите q.");
 //     while(true)
