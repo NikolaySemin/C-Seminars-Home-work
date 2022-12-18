@@ -12,17 +12,13 @@
 Console.Write("Введите трехзначное число: ");
 int a = Convert.ToInt32(Console.ReadLine()!);
 
-while(true)
+if (a > 99)
 {
-    if(a >99)
-    {
-        Console.Write("третье число у вас: ");
-        Console.WriteLine(a.ToString()[2]);
-        break;
-    }
-    else
-    {
-        Console.WriteLine("Третьей цифры нет");
-        break;
-    }
+    Console.Write("третье число у вас: ");
+    Console.WriteLine(a.ToString()[2]);
 }
+else
+{
+    Console.WriteLine("Третьей цифры нет");
+}
+
