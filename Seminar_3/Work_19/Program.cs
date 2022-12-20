@@ -1,23 +1,18 @@
 ﻿// Напишите программу, которая принимает на вход пятизначное число и проверяет, является ли оно палиндромом.
 // (читается слева направо и справа налево одинаково)
-class PalindromTest
+
+Console.WriteLine("Введите число: ");
+string num = Console.ReadLine()!;
+int len = num.Length;
+for (int i = 0; i < len/2; i++)
 {
-    public static bool Palindrom(string s)
+    if (num[i] !=num[len -i-1])
     {
-        for (int i = 0; i < s.Length / 2; i++)
-
-            if (s[i] != s[s.Length - i - 1])
-                return false;
-        return true;
+        Console.WriteLine("Число не является палиндромом");
+        break;
     }
-
-    static void Main()
+    else
     {
-        string s;
-        Console.WriteLine("Анализ палиндромов\n\nВведите строку:");
-        s = Console.ReadLine()!;
-        if (Palindrom(s))
-            Console.WriteLine("Эта строка - палиндром");
-        else Console.WriteLine("Эта строка - не палиндром");
+        Console.WriteLine("Число является палиндромом");
     }
 }
