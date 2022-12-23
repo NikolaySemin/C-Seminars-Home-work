@@ -29,8 +29,8 @@ int[] array = new int[5];
 FillRandomArray(array);
 Console.Write("массив: ");
 PrintArray(array);
-int min = Int32.MaxValue;
-int max = Int32.MinValue;
+int min = array[0];
+int max = array[0];
 
 for (int i = 0; i < array.Length; i++)
 {
