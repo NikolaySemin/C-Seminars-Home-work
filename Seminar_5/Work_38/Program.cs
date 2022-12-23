@@ -1,7 +1,7 @@
 ﻿// Задайте массив вещественных чисел. Найдите разницу между максимальным и минимальным элементов массива.
 // [3 7 22 2 78] -> 76
 
-void FillArrayRandom(int[] array)
+void FillRandomArray(int[] array)
 {
     for (int i = 0; i < array.Length; i++)
     {
@@ -26,8 +26,8 @@ void PrintArray(int[] array)
 }
 
 int[] array = new int[5];
-FillArrayRandom(array);
-Console.WriteLine("массив: ");
+FillRandomArray(array);
+Console.Write("массив: ");
 PrintArray(array);
 int min = Int32.MaxValue;
 int max = Int32.MinValue;
@@ -43,5 +43,5 @@ for (int i = 0; i < array.Length; i++)
         min = array[i];
     }
 }
-Console.WriteLine($" => {max - min}");
+Console.WriteLine($" => {max - min} <= разница между минимальным и максимальным элементом массива.");
 
