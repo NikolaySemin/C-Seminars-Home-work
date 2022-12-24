@@ -13,11 +13,7 @@ Console.Write("ВВедите число b2: ");
 double b2 = double.Parse(Console.ReadLine()!);
 Console.Write("ВВедите число k2: ");
 double k2 = double.Parse(Console.ReadLine()!);
-double x = 0;
-double y = 0;
-if (true)
-{
-    x = (b2 - b1) / (k2 - k1);
-    y = k1 * x - b1;    // если оставить как в первоначальной формуле "y = k1*x+b1;" выдает неверные координаты (4,5) вместо (0,5)
-}
+
+double x = (b2 - b1) / (k2 - k1);
+double y = k1 * x - b1;    // если оставить как в первоначальной формуле "y = k1*x+b1;" выдает неверные координаты (4,5) вместо (0,5)
 Console.WriteLine($"({x};{y})");
