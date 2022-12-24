@@ -16,4 +16,4 @@ double k2 = double.Parse(Console.ReadLine()!);
 
 double x = (b2 - b1) / (k2 - k1);
 double y = k1 * x - b1;    // если оставить как в первоначальной формуле "y = k1*x+b1;" выдает неверные координаты (4,5) вместо (0,5)
-Console.WriteLine($"({x};{y})");
+Console.WriteLine($"b1 = {b1}, k1 = {k1}, b2 = {b2}, k2 = {k2} -> ({x};{y})");
