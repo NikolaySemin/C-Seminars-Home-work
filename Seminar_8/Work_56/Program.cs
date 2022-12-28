@@ -33,28 +33,42 @@ void PrintMatrix(int[,] matr)
     }
 }
 
-int[,] matrix = new int[4, 4];
-int minSum = 90;
-int count = 0;
+int SumRowElements(int[,] matr, int i)
+{
+    int sumRow = matr[i, 0];
+    for (int j = 1; j < matr.GetLength(1); j++)
+    {
+        sumRow += matr[i, j];
+    }
+    return sumRow;
+}
+
+Console.Clear();
+Console.WriteLine("Введите количетво столбцов прямоугольного массива: ");
+int n = int.Parse(Console.ReadLine()!);
+Console.WriteLine("Введите количетво строк прямоугольного массива: ");
+int m = int.Parse(Console.ReadLine()!);
+
+int[,] matrix = new int[m, n];
 FillMatrix(matrix);
 PrintMatrix(matrix);
 Console.WriteLine();
-for (int i = 0; i < matrix.GetLength(0); i++)
+int minSumRow = 0;
+int sumRow = SumRowElements(matrix, 0);
+for (int i = 1; i < matrix.GetLength(0); i++)
 {
-    int sum = 0;
-
-    for (int j = 0; j < matrix.GetLength(1); j++)
+    int tempSumRow = SumRowElements(matrix, i);
+    if (sumRow > tempSumRow)
     {
-        sum += matrix[i, j];
-
-    }
-    if (sum < minSum)
-    {
-        minSum = sum;
-        count = i;
+        sumRow = tempSumRow;
+        minSumRow = i;
     }
 }
-Console.Write("Столбец: "+count);
+
+Console.WriteLine($" Строкa с наименьшей суммой элементов => {minSumRow + 1} ");
+Console.WriteLine($" Наименишая сумма элементов = {sumRow}");
+
+
 
 
 
